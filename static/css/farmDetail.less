@@ -1,0 +1,462 @@
+.farmDetail{
+  color: #333;
+  padding-bottom:100px;
+  .echarts{
+
+    .echarts-wrap{
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 100;
+      background: rgba(0,0,0,.5);
+    }
+    .echarts-msg{
+      padding: 30px;
+      position: fixed;
+      width: 500px;
+      height: 600px;
+      left:50%;
+      top: 50%;
+      margin-left: -250px;
+      margin-top: -300px;
+      background: #fff;
+      z-index: 101;
+      #myChart1,#myChart2{
+        width: 500px;
+        height: 300px;
+      }
+    }
+  }
+  .title{
+    width: 100%;
+    height: 86px;
+    line-height: 86px;
+    background: #fff;
+    .title-left{
+      float: left;
+      span{
+        font-size: 16px;
+        color: #333;
+        a{
+          color: #333;
+          &:hover{
+            color: #69BC19;
+          }
+        }
+      }
+      b{
+        margin-left:15px;
+        color: #AAAAAA;
+        font-size:16px;
+      }
+      i{
+        font-size: 16px;
+        color: #009EFF;
+      }
+    }
+    .title-right{
+      float: right;
+      span{
+        font-size:16px;
+        margin-left:84px;
+        b{
+          color: #69BC19;
+        }
+      }
+    }
+  }
+  .content{
+    margin-top: 30px;
+    .base{
+      padding: 30px;
+      background: #fff;
+      margin-bottom:30px;
+      .base-left{
+        width: 200px;
+        h3{
+          position: relative;
+          span,img{
+            display: inline-block;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            background: #aaaaaa;
+            font-size:20px;
+            color: #848484;
+            text-align: center;
+            margin-right:10px;
+          }
+          b{
+            font-size:16px;
+            width: 100px;
+            vertical-align: middle;
+            display: inline-block;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+          }
+          i{
+            position: absolute;
+            left: 17px;
+            top: 0px;
+            width: 20px;
+            height: 11px;
+            background: url("../images/farmDetail/renzheng.png") no-repeat;
+            background-size: 100% 100%;
+          }
+          s{
+            vertical-align: middle;
+            float: right;
+            width: 25px;
+            height: 23px;
+            margin-right:5px;
+            background: url("../images/farmDetail/luse.png") no-repeat;
+            background-size: 100% 100%;
+          }
+          em{
+            vertical-align: middle;
+            float: right;
+            width: 25px;
+            height: 23px;
+            background: url("../images/farmDetail/youji.png") no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+        .img{
+          width:193px;
+          height:222px;
+          margin: 20px auto 10px;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .btn{
+          width:100px;
+          height:32px;
+          color: #69BC19;
+          line-height: 32px;
+          margin: 0 auto;
+          border: 1px solid #69BC19;
+          border-radius: 5px;
+          cursor: pointer;
+          text-align: center;
+        }
+        .btn-yes{
+          span{
+            display: inline-block;
+            width:95px;
+            height:32px;
+            line-height:32px;
+            text-align: center;
+            background: #aaaaaa;
+            color: #fff;
+          }
+          b{
+            cursor: pointer;
+            display: inline-block;
+            width:92px;
+            height:30px;
+            margin-left:10px;
+            line-height: 30px;;
+            border: 1px solid #69BC19;
+            color: #69BC19;
+            text-align: center;
+          }
+        }
+      }
+      .base-right{
+        width: 882px;
+        ul{
+          li{
+            padding-top:20px;
+            border-bottom: 1px solid #eaeaea;
+            &:last-child{
+              border-bottom: none;
+            }
+            .icon{
+              width: 60px;
+              margin-right:50px;
+              text-align: center;
+              .img{
+                width: 34px;
+                height: 38px;
+                background: url("../images/farmDetail/info.png") no-repeat;
+                background-size: 100% 100%;
+                margin: 0 auto 15px;
+              }
+            }
+            .icon1{
+              .img{
+                width: 32px;
+                height: 34px;
+                background: url("../images/farmDetail/xinyu.png") no-repeat;
+                background-size: 100% 100%;
+              }
+            }
+            .icon2{
+              .img{
+                width: 37px;
+                height: 37px;
+                background: url("../images/farmDetail/mobile.png") no-repeat;
+                background-size: 100% 100%;
+              }
+            }
+            .msg{
+              width: 770px;
+              .txt{
+                margin-bottom:20px;
+                span{
+                  display: inline-block;
+                  width: 252px;
+                  a{
+                    color: #69BC19;
+                  }
+                  &.other{
+                    width: 100%;
+                  }
+                }
+                b{
+                  color: #AAAAAA;
+                  margin-left:5px;
+                }
+                i{
+                  color: #333;
+                  margin-left:5px;
+                }
+                s{
+                  display: inline-block;
+                  width: 25px;
+                  height: 23px;
+                  vertical-align: text-bottom;
+                  margin-left:5px;
+                  background: url("../images/farmDetail/luse.png") no-repeat;
+                  background-size: 100% 100%;
+                }
+                em{
+                  display: inline-block;
+                  width: 25px;
+                  height: 23px;
+                  vertical-align: text-bottom;
+                  margin-left:5px;
+                  background: url("../images/farmDetail/youji.png") no-repeat;
+                  background-size: 100% 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .zuowu-wrap{
+      background: #fff;
+      .select-title{
+        padding: 30px 30px 0;
+        font-weight:bold;
+      }
+      .select{
+        padding: 30px;
+        border-bottom: 1px solid #eaeaea;
+        height: 40px;
+        line-height: 40px;
+        .select-left{
+          text-align: center;
+          span{
+            display: inline-block;
+            cursor: pointer;
+            margin-right:35px;
+            padding-right:10px;
+            position: relative;
+            b{
+              width: 12px;
+              height: 16px;
+              display: inline-block;
+              background: url("../images/common/xia.png");
+              vertical-align: text-bottom;
+            }
+            &.cur,&.on{
+              color: #69BC19;
+            }
+            &.cur{
+              b{
+                background: url("../images/common/xia.png");
+              }
+            }
+            &.on{
+              b{
+                background: url("../images/common/shang.png");
+              }
+            }
+          }
+          //.icon1:before{
+          //  content:"";
+          //  position:absolute;
+          //  top:19px;
+          //  left:48px;
+          //  border-top:6px solid #000;
+          //  border-left:6px solid transparent;
+          //  border-right:6px solid transparent;
+          //}
+          //.cur.icon1:before{
+          //  border-top:6px solid #69BC19;
+          //}
+          //.on.icon1:before{
+          //  border-top:none;
+          //  border-bottom:6px solid #69BC19;
+          //}
+        }
+      }
+      .zuowu-list{
+        ul{
+          padding: 0 15px;
+          li{
+            width:328px;
+            height:81px;
+            margin: 20px 15px;
+            box-shadow: 0px 0px 8px 6px #f1f8ea;
+            padding: 10px 15px 20px;
+            float: left;
+            cursor: pointer;
+            .img{
+              width:100px;
+              height:73px;
+              margin-top:8px;
+              img{
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .txt{
+              margin: 0 18px;
+              .zuowu-txt{
+                width: 188px;
+              }
+              h4{
+                font-weight:bold;
+                span{
+                  display: inline-block;
+                  vertical-align: middle;
+                }
+                b{
+                  font-weight: bold;
+                  vertical-align: middle;
+                  width: 140px;
+                  display: inline-block;
+                  overflow: hidden;
+                  text-overflow:ellipsis;
+                  white-space: nowrap;
+                }
+              }
+              .time{
+                font-size:12px;
+                color: #AAAAAA;
+              }
+              .icon{
+                margin-top: 15px;
+
+                span{
+                  display: inline-block;
+                  width: 21px;
+                  height: 23px;
+                  margin-right:5px;
+                  background: url("../images/farmDetail/yezi-hui.png") no-repeat;
+                  -webkit-background-size: 100% 100%;
+                  background-size: 100% 100%;
+                }
+              }
+              .icon1{
+                margin-top: 15px;
+                span{
+                  display: inline-block;
+                  width: 21px;
+                  height: 23px;
+                  margin-right:5px;
+                  background: url("../images/farmDetail/yezi.png") no-repeat;
+                  -webkit-background-size: 100% 100%;
+                  background-size: 100% 100%;
+                }
+              }
+              .day{
+                width:46px;
+                height:26px;
+                line-height: 26px;
+                color: #fff;
+                border-radius: 20px;
+                background: #aaaaaa;
+                text-align: center;
+              }
+            }
+            .xinyu{
+              .color{
+                width:45px;
+                height:45px;
+                line-height: 45px;
+                border-radius: 50%;
+                text-align: center;
+                font-size:14px;
+                color: #fff;
+                background: #FF0000;
+                margin: 0 auto 5px;
+              }
+              .color-txt{
+                color: #FF0000;
+              }
+              .orange{
+                .color{
+                  background: #FF9900;
+                }
+                .color-txt{
+                  color: #FF9900;
+                }
+              }
+              .green{
+                .color{
+                  background: #69BC19;
+                }
+                .color-txt{
+                  color: #69BC19;
+                }
+              }
+              .yellow{
+                .color{
+                  background: #CCCC00;
+                }
+                .color-txt{
+                  color: #CCCC00;
+                }
+              }
+              .cyan{
+                .color{
+                  background: #669966;
+                }
+                .color-txt{
+                  color: #669966;
+                }
+              }
+              .gray{
+                .color{
+                  width: 50px;
+                  height: 40px;
+                  background: #aaa;
+                  font-size: 12px;
+                  line-height: 14px;
+                  padding-top: 12px;
+                }
+                .color-txt{
+                  color: #aaa;
+                }
+              }
+            }
+          }
+        }
+      }
+      .page{
+        padding: 30px;
+        text-align: center;
+      }
+    }
+  }
+}
